@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Enter User ID to get movie recommendations</h1>
+    <input type="text" id="userId" name="userId" />
+    <button type="button" onclick="getRecommendations()">
+      Get Recommendations
+    </button>
+    <p id="output"></p>
+    <script>
+      function getRecommendations() {
+        var userId = $("#userId").val();
+        $.post(
+          "http://localhost:5000/recommend",
+          JSON.stringify({ userId: userId }),
+          function (data, status) {
+            var movieIds = data["movie_ids"];
+            var ratings = data["ratings"];
+            for (var i = 0; i < movieIds.length; i++) {
+              $("#output").append(
+                "<p>Recommended movie: " +
+                  movieIds[i] +
+                  ", predicted rating: " +
+                  ratings[i] +
+                  "</p>"
+              );
+            }
+          },
+          "json"
+        );
+      }
+    </script>
+  </body>
+</html>

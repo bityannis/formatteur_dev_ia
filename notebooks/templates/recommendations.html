@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendations</title>
+  </head>
+  <body>
+    <h1>Films recommandés pour l'utilisateur</h1>
+    <ul>
+      {% for title, rating in predictions %}
+      <li>Title: {{ title }}</li>
+      {% endfor %}
+    </ul>
+    <a href="/">Recommencer</a>
+  </body>
+</html>
