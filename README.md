@@ -1,7 +1,3 @@
 Dans le contexte de la certification de développeur en intelligence artificielle de Simplon, le but général du projet MovieLens est de mettre en œuvre et de démontrer une compréhension pratique de toutes les compétences répertoriées dans les étapes C1 à C18, en utilisant le jeu de données MovieLens comme un exemple pratique.
 
 Le jeu de données MovieLens est une collection de notes attribuées par les utilisateurs à différents films. Un objectif commun lors de l'utilisation de ces données est de développer un système de recommandation de films. Un tel système pourrait prédire la note qu'un utilisateur donné attribuerait à un film qu'il n'a pas encore vu, en se basant sur les notes que cet utilisateur a données à d'autres films et sur les notes que d'autres utilisateurs ont données à ce film. Ces prédictions peuvent ensuite être utilisées pour recommander à chaque utilisateur les films qu'il est le plus susceptible d'apprécier.
-
-Pour développer un tel système, vous devrez effectuer une série de tâches, y compris la collecte et le nettoyage des données (C1), la conception d'une base de données (C2), l'importation des données dans cette base de données (C3), la préparation des données pour l'analyse (C4), le choix ou la conception d'un algorithme approprié (C5), l'implémentation de cet algorithme (C6), et ainsi de suite jusqu'à l'étape C18.
-
-En bref, le but du projet MovieLens dans ce contexte est de vous donner une expérience pratique de toutes les compétences nécessaires pour devenir un développeur en intelligence artificielle.
